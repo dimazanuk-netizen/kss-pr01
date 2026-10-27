@@ -9,7 +9,9 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier . --write",
-    "format:check": "prettier . --check"
+    "format:check": "prettier . --check",
+    "serve": "node src/server.js",
+    "check": "npm run lint && npm run format:check"
   },
   "keywords": [],
   "author": "Дмитро ЗАНЮК",
@@ -20,5 +22,8 @@
     "eslint-config-prettier": "^10.1.8",
     "globals": "^17.13.0",
     "prettier": "^3.9.10"
+  },
+  "engines": {
+    "node": ">=24"
   }
 }
